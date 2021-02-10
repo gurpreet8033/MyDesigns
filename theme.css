@@ -16,7 +16,7 @@
 body{
     background: rgb(49 23 23);
     overflow-x: hidden;
-/*     padding: 15%; */
+    padding: 5%;
     text-align: center;
 }
 .container{
