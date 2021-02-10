@@ -1,0 +1,80 @@
+:root{
+    --background1: #8E0E00;  /* fallback for old browsers */
+    --background2: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    --background3: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    --light:pink;
+    --background4: #7b4397;  /* fallback for old browsers */
+    --background5: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    --background6: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /**/
+    --background7:  #283048; /* fallback for old browsers */
+    --background8:-webkit-linear-gradient(to right, #859398, #283048);   /* Chrome 10-25, Safari 5.1-6 */
+    --background9:linear-gradient(to right, #859398, #283048);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+
+    --box-shadow-color:0px 2px 6px rgba(187, 42, 134, 0.521),10px 2px 6px rgba(199, 21, 134, 0.479),-8px 2px 5px rgba(199, 21, 134, 0.589);
+}
+body{
+    background: rgb(49 23 23);
+    overflow-x: hidden;
+    padding: 15%;
+    text-align: center;
+}
+.container{
+    box-shadow:var(--box-shadow-color);
+    background-color: #00000063;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 5% 1fr 1fr ;
+    /* margin:0 5%;  */
+}
+.col{
+    margin: 0 ;
+    /* background-color: rgb(192, 164, 192); */
+    padding: 5%;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; 
+    box-sizing: content-box;    */
+}
+button{
+   padding: 0.5% 10%;
+   border: none;
+   border-radius: 9px;
+   background: none;
+   border:2px solid  var(--background4);
+   color:rgba(225, 230, 229, 0.815);
+   text-shadow:1px 1px 5px mediumvioletred;
+   box-shadow:1.5px 2px 5px mediumvioletred;
+   margin: 2%;
+   outline: none;
+}
+button:hover{
+    box-shadow:1.5px 2px 5px rgb(210, 230, 37) ;
+}
+img{
+    height:12em;
+    width:20em;
+    /* display: block;  ?? */
+}
+.mid{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+.row{
+   /* background-color: mediumturquoise; */
+}
+.nav-bar{
+    background: var(--background4);
+    background: var(--background5);
+    background: var(--background6);
+}
+h1{
+    color: var(--light);
+}
+
+@media screen and (min-width: 110px) and (max-width: 415px)
+{
+    img{
+        transform: scale(0.9,0.9);
+    }
+}
