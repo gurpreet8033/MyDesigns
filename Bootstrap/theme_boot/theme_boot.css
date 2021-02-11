@@ -1,0 +1,60 @@
+:root{
+    --text-shade:0 2px 7px rgb(230, 255, 8);
+}
+body{
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    /* overflow-y: hidden; */
+}
+.page-header{
+    text-shadow: var(--text-shade);
+}
+
+#col1{
+    /* background-color: mediumvioletred; */
+    text-align: center;
+    justify-items: center;
+    transform: translate(0,40px);
+}
+#carouselExampleSlidesOnly{
+    margin-top: 3%;
+}
+.start{
+    /* justify-content: center; */
+    margin-top: -44px;
+    border: none;
+    background-color: turquoise;
+    border-radius: 0 8px;
+    padding: 1% 7%;
+    color: rgba(255, 255, 255, 0.705);
+    box-shadow:0 2px 7px turquoise;
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+}
+.start:hover{
+    color: rgb(222, 245, 18);
+    box-shadow:0 2px 7px rgb(230, 255, 8);
+}
+
+/* Hello,@Bhopender  sir,
+
+I hope you are having a good time!
+Please find today's work status report below:
+
+1) Worked on :
+       • a. made a basic slider and then added one slider to my web page (theme), 
+       • b. also used 2D transformation
+       • c. bootstrap Dropdown
+Approach: html, bootstrap 5 , CSS , JQuery
+2) Completed END of the day: 
+       • a. basic Corousel
+       • b. added multiple pages in my theme Changer
+       • c. implemented Skew(),skewX(), skewY(), scale() etc.
+      
+3) In progress:
+       • a. bootstrap dropdown (different types) 
+4) Any query/blockage: no  
+Thanks */
