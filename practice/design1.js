@@ -17,32 +17,32 @@ $(document).ready(()=>{
     $(".right").hover(()=>{
         $(".start").slideToggle()
     })
-    $('.dropdown-toggle').dropdown()
+    // $('.dropdown-toggle').dropdown()
+});
 
-
-var attempt=3;
-function validate()
-{
-    var username=document.getElementById("name").Value;
-    var password=document.getElementById("pass").Value;
-    if ( username=="Gurpreet" && password=="123")
-    {
-        alert("Successfully Login");
-        return false;
-    }
+// var attempt=3;
+// function validate()
+// {
+//     var username=document.getElementById("name").Value;
+//     var password=document.getElementById("pass").Value;
+//     if ( username=="Gurpreet" && password=="123")
+//     {
+//         alert("Successfully Login");
+//         return false;
+//     }
     
 
-    else
-    {
-        attempt--;
-        alert("you have left "+attempt+"attempt");
+//     else
+//     {
+//         attempt--;
+//         alert("you have left "+attempt+"attempt");
 
-        if(attempt==0)
-        {
-            document.getElementById("name").disabled=true;
-            document.getElementById("pass").disabled=true;
-            document.getElementById("submit").disabled=true;
-            return false;
-        }
-    }
-}
+//         if(attempt==0)
+//         {
+//             document.getElementById("name").disabled=true;
+//             document.getElementById("pass").disabled=true;
+//             document.getElementById("submit").disabled=true;
+//             return false;
+//         }
+//     }
+// }

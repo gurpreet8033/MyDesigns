@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* background-color:aquamarine; */
+    height: 100vh;
+}
+.container-sub{
+    /* background: blueviolet; */
+    display: grid;
+    grid-template-rows: 60% 70% 70%;
+    row-gap: 3px;
+}
+.top
+{
+    background:url("bridge.jpg");
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+    color: snow;
+    position: relative;
+}
+.top::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.top .sub-top{
+    margin-top: 2%;
+    position: relative;
+    z-index: 2;
+}
+.top-nav-bar {
+    text-align: center;
+    margin: 5px 0;
+    /* background-color: seagreen; */
+}
+.top-nav-bar ul li{
+    list-style: none;
+    padding: 25px;
+    /* background: royalblue; */
+    display: inline-block;
+}
+.mid
+{
+    background:coral;
+}
+.mid .mid-1{
+    /* background: teal; */
+}
+.sub-mid{
+    /* margin: 2% 15%; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: 40vh 40vh 40vh;
+    column-gap: 2px;
+    justify-content: center;
+    padding: 10% 0 0 0 ;
+}
+
+.mid-1{  
+    margin: 0.5% 5%;
+    padding:20% 0;
+}
+.mid-1:hover{
+    box-shadow:0 0 5px 5px pink;
+    color:snow;
+}
+img{
+    height: 60px;
+}
+.bottom{
+    background:coral;
+}
+
+@media (max-width:767px){
+    #grid1{
+        grid-area: webDev;
+    }
+    #grid2{
+        grid-area: digital;
+    }
+    #grid3{
+        grid-area: brand;
+    }
+    .grid{
+        grid-template-areas:
+        'webev digital',
+        'brand brand';
+    }
+}
+
+/* Hello,@Bhopender  sir,
+
+I hope you are having a good time!
+Please find today's work status report below:
+
+1) Worked on :
+       • a. making a page responsive without Bootstrap, 
+       • b. mainly grid and flex and it's different properties
+       • c. bootstrap Dropdown
+Approach: html, bootstrap 5 , CSS , JQuery
+2) Completed END of the day: 
+       • a. made a web page ,designed it with CSS only 
+       • b. used grid and flex
+       • c. bootstrap Dropdown (basic)
+             
+3) In progress:
+       • a. media query for grid and flex
+4) Any query/blockage: no  
+Thanks */
