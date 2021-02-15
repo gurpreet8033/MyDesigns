@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .container{
@@ -10,8 +12,8 @@ body{
 .container-sub{
     /* background: blueviolet; */
     display: grid;
-    grid-template-rows: 60% 70% 70%;
-    row-gap: 3px;
+    grid-template-rows: 30% 21% 25% 29% 30%;
+    row-gap: 4px;
 }
 .top
 {
@@ -22,6 +24,7 @@ body{
     background-size: cover;
     color: snow;
     position: relative;
+   
 }
 .top::after{
     content: '';
@@ -33,6 +36,15 @@ body{
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
 }
+.top .top-detail-head h1{
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+}
+.top-head h1{
+    color: black;
+    font-size: 2em;
+    margin-top: -19px;
+}
 .top .sub-top{
     margin-top: 2%;
     position: relative;
@@ -41,64 +53,196 @@ body{
 .top-nav-bar {
     text-align: center;
     margin: 5px 0;
-    /* background-color: seagreen; */
 }
+.top-nav-bar ul{
+    border-top:1.5px solid white;
+    border-bottom:1.5px solid white;      
+    margin:0 250px;   
+}    
 .top-nav-bar ul li{
+    font-family: 'Lora', serif;
+    font-size: 0.7em;
     list-style: none;
-    padding: 25px;
-    /* background: royalblue; */
+    padding: 15px;
     display: inline-block;
+    text-transform: uppercase;
+    margin: -1% 0;
 }
-.mid
-{
-    background:coral;
+.top-nav-bar ul li:hover{                         /* HOVER UL LI*/
+    background-color: rgba(232, 119, 103, 1);
 }
-.mid .mid-1{
-    /* background: teal; */
+.top-detail-sub{
+    margin-top: 15px;
 }
-.sub-mid{
-    /* margin: 2% 15%; */
+.mid{
+    background:rgba(247, 113, 112, 1);
+    color:snow;
+    justify-content: center;
+    text-align: center;
+}
+.mid .mid-heading{
+    background:rgba(247, 113, 112, 1);
+    padding: 30px 6vw 1px 6vw;
+    box-shadow: 0 -8px 6px rgb(59, 59, 59);
+    font-weight: 700;
+    font-size: 00.55em;
+    z-index: 2;
+    position: relative;
+}
+.mid .mid-1 .heading{
+    padding: 5px 0;
+    font-size: 0.8em;
+    line-height: 0.9;
+}
+.sub-mid{    
     text-align: center;
     display: grid;
-    grid-template-columns: 40vh 40vh 40vh;
-    column-gap: 2px;
+    grid-template-columns:38vh 38vh 38vh ;
+    column-gap: 8px;
     justify-content: center;
-    padding: 10% 0 0 0 ;
+    padding: 5px 0 5px 0;
+    margin-top: 50px;    
 }
-
-.mid-1{  
-    margin: 0.5% 5%;
-    padding:20% 0;
+.mid .mid-1{  
+    margin: -25px 0 40px 00;
+    padding:5% 2%;
 }
-.mid-1:hover{
-    box-shadow:0 0 5px 5px pink;
+.mid .mid-1 .logo img{
+    height: 45px;
+}
+.mid .mid-1 .detail{
+    font-size: 0.55em;
+}
+#grid2::after{
+}
+#grid1:hover{
+    border:2px solid #e7e6e6;
     color:snow;
+    background-color:rgba(252, 89, 90, 1) ; 
+    margin: -38px 0 40px 0;
 }
-img{
+#grid2:hover{
+    border:2px solid #e7e6e6;
+    color:snow;
+    background-color:rgba(252, 89, 90, 1) ; 
+    margin: -40px 0 40px 0;
+}
+#grid3:hover{
+    border:2px solid #e7e6e6;
+    color:snow;
+    background-color:rgba(252, 89, 90, 1) ; 
+    margin: -40px 0 40px 0;
+}
+/* img{
     height: 60px;
+} */
+
+.mid-1 .web-1{
+    background-color: rgb(255, 255, 255);
+    height: 30vh;
+    padding: 15px 0;
+    border-bottom: 2px solid black;
+}
+.mid-1 .web-1 img{
+   padding: 0 2px;
+}
+.web-1 .heading{
+    color:rgba(252, 89, 90, 1) ;
+}
+.sub-mid .web-1 .detail{
+    color: black;
+}
+.sub-mid .web-1:hover{
+    border:2px solid #e7e6e6;
+    color:snow;
+    background-color:rgb(255, 255, 255) ; 
+    margin: -37px 0 30px 0;
+}
+.mid-deatil-sec{
+    padding: 30px 60px;
+    
+}
+.sub-mid-sec{
+    height: 250px;
+    padding: 45px 0 0 0;
+    margin: 0 5px ;
+    border-top: double white;
+    border-bottom:double white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* display: inline-block; */
+}
+.sub-mid-sec .p-1{
+    font-size: 2em;
+}
+.sub-mid-sec .p-2{
+    color:gray;
+}
+.sub-mid-sec .p-2 span{
+    color:rgba(228, 124, 106, 1);
+    font-style: italic;
+}
+.sub-mid-sec .p-3{
+    margin:40px 0;
+    font-size:1.6em;
+}
+.sub-mid-sec .p-1,.p-2,.p-3{
+    margin: 5px 0 7px 0;
+}
+.sub-mid-sec .port a{
+    text-decoration: none;
+    background-color: rgba(228, 124, 106, 1);
+    padding: 8px;
+    border-radius: 3px;
+    color: white;
 }
 .bottom{
     background:coral;
 }
 
-@media (max-width:767px){
-    #grid1{
-        grid-area: webDev;
+@media (max-width:769px){    
+    .sub-mid{        
+        grid-template-columns: 60vh 60vh;        
     }
-    #grid2{
-        grid-area: digital;
+    .container-sub{        
+        grid-template-rows:25% 21% 38% 20% 20%;        
     }
-    #grid3{
-        grid-area: brand;
+    .top-nav-bar ul{
+               margin:0 30px;   
+    }    
+
+    .mid-1{
+        margin: 0 10px 10px 10px;
     }
-    .grid{
-        grid-template-areas:
-        'webev digital',
-        'brand brand';
-    }
+    /* .mid-1 .web-1{
+        height: 25vh;
+        padding: 5px 0;
+        width: 30vw;
+        border-bottom: 2px solid black;
+    } */
 }
 
-/* Hello,@Bhopender  sir,
+@media (max-width:596px){    
+    .sub-mid{       
+        grid-template-columns: 60vh;        
+    }
+    .container-sub{        
+        grid-template-rows:20% 21% 36% 20% 20%;        
+    }
+    .mid-1{
+        margin: 0 10px 10px 10px;
+    }
+    .web-1 {
+        margin: 0 30%;
+        
+    }
+    /* .sub-mid .mid-1{      
+        grid-template-columns: 60vh;        
+    } */
+}
+
+/* Hello, @Bhopender  sir,
 
 I hope you are having a good time!
 Please find today's work status report below:
@@ -106,14 +250,14 @@ Please find today's work status report below:
 1) Worked on :
        • a. making a page responsive without Bootstrap, 
        • b. mainly grid and flex and it's different properties
-       • c. bootstrap Dropdown
+      
 Approach: html, bootstrap 5 , CSS , JQuery
 2) Completed END of the day: 
        • a. made a web page ,designed it with CSS only 
        • b. used grid and flex
-       • c. bootstrap Dropdown (basic)
+       • c. made it responsive
              
 3) In progress:
-       • a. media query for grid and flex
+       • a. media query for grid ,ul and flex 
 4) Any query/blockage: no  
 Thanks */
