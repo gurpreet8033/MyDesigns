@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: linear-gradient(to right, #000000, #434343);
+}
+
+.container {
+  color: pink;
+}
+.container ul li {
+  color: blue;
+}
+.container button {
+  background-color: #8fd9db;
+}
+
+/*# sourceMappingURL=output.css.map */

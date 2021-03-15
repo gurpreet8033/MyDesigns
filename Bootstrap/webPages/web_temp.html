@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .container-fluid::after{
+            content: '';
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            background-color: rgba(121, 50, 187, 0.685);
+            width: 100%;
+        }
+        .container{
+            z-index: 2;
+            position: relative;
+            box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.849),-5px 7px 7px rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid"          style=" background: url('../leaves.jpg'); background-size: cover; position: relative;">
+        <div class="container text-white" style=" background:rgba(0, 0, 0, 0.473)">
+            <h1 class="display-3" style="padding-top: 250px;">
+                <div class="row">
+                    <div class="col mx-1 text-secondary"><h6>WELCOME</h6></div>
+                </div>
+                <div class="row">
+                    <div class="col"> HTML</div>
+                </div>
+                <div class="row">
+                    <div class="col"> Website Templates</div>
+                </div>
+            </h1>
+            <div class="row my-5">
+                <div class="col-md-2 p-3 text-center mx-3   border "><a class="text-white" href="web_temp_next.html">START A PROJECT</a></div>
+                <div class="col-md-2 p-3 text-center        border "><a class="text-white" href="#">MORE ABOUT US</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

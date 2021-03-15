@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="anim.css">
+    <style>
+        body{
+            background: #fc00ff; 
+            background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  
+            background: linear-gradient(to right, #00dbde, #fc00ff); 
+        }
+        .parent-anim-key{
+            position: relative;
+        }
+        .child1
+        {
+            transform: rotateY(0) rotateX(51deg) rotate(-43deg);                 
+            transform-style: preserve-3d ;
+            border-radius: 32px;
+            box-shadow: 1px 1px 0 1px #f9f9fb,-1px 0 28px 0 rgba(34, 33, 81, 0.01),
+            -28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+            transition: .4s ease-in-out transform,
+            .4s ease-in-out box-shadow;
+        }
+        .child1:hover{
+            transform: translate3d(0 ,16px,0);
+            box-shadow:1px 1px 0 1px #f9f9fb,-1px 0 28px 0 rgba(34, 33, 81, 0.01),-54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+        }
+        .child2{
+            transform: rotateY(0) rotateX(51deg) rotate(-43deg);                 
+            transform-style: preserve-3d ;
+            border-radius: 32px;
+            box-shadow: 1px 1px 0 1px #f9f9fb,
+                        -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+                        -28px 28px 28px 0 rgba(34, 33, 81, 0.63);
+            transition: .4s ease-in-out transform,
+            .4s ease-in-out box-shadow;
+        }
+        .child2:hover{
+            /* transform: translate3d(0 ,-16px,0) rotateX(51deg) rotateZ(-43deg); */
+            box-shadow:1px 1px 0 1px #f9f9fb,
+                      -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+                      -54px 54px 28px -10px rgba(34, 33, 81, 0.582);
+        }
+        @keyframes anim1{
+            0%
+            {
+                background-color: rgb(160, 217, 238);
+                color:rgb(4, 72, 114);
+                right:100px;
+                bottom:200px;                
+            }
+            25% 
+            {   background-color: #00dbde;
+                border-radius: 5px;    
+                bottom:200px;   
+                right:20px;            
+            }
+            50%
+            {
+                background-color: darkorchid;
+                right:20px;
+                bottom:0px;
+            }
+            75% 
+            {
+                background-color: #fc00ff;
+                border-radius: 10px;
+                color: lightpink;
+                right:100px;
+                bottom:0px;
+                /* top:50px; */
+            }
+            100%
+            {
+                background-color: rgb(41, 12, 150);
+                color:lemonchiffon ;
+                right:100px; 
+                bottom:200px;
+            }
+        }
+        .child1-anim{
+            height:200px;
+            width:300px;
+            animation-name: anim1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color:blue ;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            position: absolute;
+        }        
+    </style>
+</head>
+<body >
+    <div class="container " >
+        <div class="parent d-flex justify-content-center m-3 p-5 col-md-10" style="height: 80vh;">
+            <div class="child1 bg-light col-md-3 m-5" style="height: 200px;">
+                BOX1
+            </div>
+        </div>
+        <div class="parent2 d-flex justify-content-center m-3 p-5 col-md-10" style="height: 80vh;">
+            <div class="child2 bg-light col-md-3 m-5" style="height: 200px;">
+                BOX1
+            </div>
+            <div class="child2 bg-light col-md-3 m-5" style="height: 200px;">
+                BOX1
+            </div>
+            <div class="child2 bg-light col-md-3 m-5" style="height: 200px;">
+                BOX1
+            </div>
+        </div>
+        <div class="parent-anim-key d-flex justify-content-center m-3 p-5 col-md-10" style="height: 80vh;">
+            <div class="child1-anim  col-md-3 m-5" style="height: 200px;">
+                BOX-ANIM
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

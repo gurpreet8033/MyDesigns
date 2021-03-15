@@ -1,0 +1,63 @@
+@use 'input';                                                   // M O D U L E S 
+$back_color:chocolate;
+%box-extend
+{
+    height: 100px;
+    width:200px;
+    background-color: $back_color;
+    margin:10px;
+}
+
+body
+{
+    margin:0;
+    padding: 0;
+    background: input.$background-color1 ;
+}
+.container
+{
+    color:input.$sky-color;
+    .container-sm
+    { 
+        background: input.$background-color1 ;                  // M O D U L E S 
+        .row
+        {
+            [class*="col-"]
+            {
+                background-color:chartreuse ;
+                color: black;
+            }
+        }
+    }
+    ul
+    {
+        position: relative;
+        transform: rotate(-35deg) skew(20deg,5deg);
+        li
+        {
+            background: #000;
+            color: #575757;
+            text-align: center;
+            height: 2.5em;
+            width: 4em;
+            vertical-align: middle;
+            line-height: 2.5em;
+            border-bottom: 1px solid #060606;
+            position: relative;
+            display: block;
+            text-decoration: none;
+            box-shadow: -2em 1.5em 0 #e1e1e1;
+            transition: all .25s linear;
+            // color:input.$main-font-color;
+        }        
+    }
+    [class*="box-"]{
+        @extend %box-extend
+    }
+//    [class*="box-"]{
+//        height: 100px;
+//        width:200px;
+//        background-color: chocolate;
+//        margin:10px;
+//    }
+}

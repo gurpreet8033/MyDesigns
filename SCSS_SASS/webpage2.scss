@@ -1,0 +1,267 @@
+// @use 'input2'; 
+
+$back-color-white:#ffffff;                          // VARIABLES
+$primary-text-color:#009bde;
+// $primary-text-color:input2.$back_color;
+
+$primary-box-shadow:0 0px 6px  rgb(204, 196, 196),;
+
+%background-pic{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%text-des{
+    .text-1
+    {
+        @extend %primary-font;                          
+    } 
+    .text-2
+    {
+        color: $primary-text-color;
+        @extend %primary-font;                           
+    } 
+}
+%primary-font{
+   font-weight: 700;
+}
+%secondary-font{
+    font-size: 30px;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background: #f8f8f8;
+    @extend %background-pic
+}
+.pic{
+    overflow: hidden;
+    border-radius: 20px;
+}
+.container
+{
+    .outer                                                         // N E S T I N G
+    {
+        .navbar
+        {
+            justify-content: space-between;
+            // .navbar-brand
+            // {
+            // }
+            ul
+            {     
+                li
+                {
+                    width: fit-content;
+                //    padding-right: 30px;
+                    button
+                    {
+                      background-color: $primary-text-color;  
+                    }
+                }
+                .news
+                    {
+                        color: $primary-text-color;
+                    }
+                 a
+                {
+                    font-weight: 700;
+                    color:black;                    
+                }                            
+            }
+        }
+        .inner
+        {
+            box-shadow:$primary-box-shadow;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            margin-top: 10px;
+            padding: 100px 0 0 50px;
+            .top-start
+            {
+                .row
+                {
+                    .detail
+                    {
+                        @extend %text-des;                              // I N H E R I T A N C E
+
+                        // .text-1
+                        // {
+                        //     @extend %primary-font                            
+                        // } 
+                        // .text-2
+                        // {
+                        //     color: $primary-text-color;
+                        //     @extend %primary-font                            
+                        // } 
+                        
+                        button:nth-child(1)
+                        {
+                            background-color: $primary-text-color;
+                        }    
+                                        
+                    }
+                    .arrow{
+                        justify-self: end;
+                    }
+                    .pic
+                    {
+                        margin-top: -40px;
+                    }
+                }
+            }
+        }       
+    }
+    .top-find
+    {
+        margin-top: 50px;
+        .row
+        {
+            .detail
+            {
+                @extend %text-des ;                                                  
+            }
+        }
+    }
+    .top-features{
+        margin-top: 100px;
+        .row
+        {
+            .col
+            {
+                text-align: center;
+                border-radius: 9px;
+            }
+        }
+    }
+    .mid-how
+    {
+        text-align: center;
+        width: fit-content;
+        margin: 0px 200px;
+        position: relative;
+        text-overflow: ellipsis;
+       .detail
+       {
+           text-align: center;
+            .text-1
+            {                
+                display: inline;                
+                @extend %primary-font;
+            }
+            .text-2
+            {
+                display: inline;
+                color: $primary-text-color;
+                @extend %primary-font;                            
+            } 
+       }
+       .pic{
+           iframe{
+               border-radius: 50px;
+               height: 500px;
+               width:800px;
+           }
+       }
+    }
+    .mid-help
+    {
+        margin-top: 100px;
+        .row
+        {
+            .image
+            {
+                .pic
+                {
+                    border-radius: 8px;
+                }
+            }
+            .detail
+            {               
+                @extend %text-des;                                                   
+            }          
+        }
+    }
+    .mid-about
+    {
+        margin-top: 100px;
+        .row
+        {
+            .detail
+            {               
+                @extend %text-des                                                   
+            }
+            
+            .pic img
+            {
+                border-radius: 8px;
+            }
+        }
+    }    
+}
+.deposit-needs
+    {
+        background: #000000; 
+        background: -webkit-linear-gradient(to right, #434343, #000000);  
+        background: linear-gradient(to right, #434343, #000000);
+        .row{
+            .detail         
+            {
+                padding-left:95px;
+                display: grid;
+                height: 50vh;   
+                .text-1
+                {
+                    align-self:end;
+                }                        
+                @extend %text-des;                                                        
+            }
+            .butn{
+                align-self: center;
+            }  
+        }
+        .pic img
+        {
+            border-radius: 8px;
+        }
+        button
+        {
+            background-color: $primary-text-color;
+        } 
+    }   
+    .bottom
+    {
+        height: 70vh;
+        .bottom-inner
+        {
+            margin:0 380px;
+            .row
+            {                
+                text-align: center;               
+            }
+        }
+        .bottom-inner-2
+        {
+            text-align: center;
+            .row
+            {
+                margin: 0 100px;
+            }
+        }
+        .bottom-inner-3
+        {
+            .row
+            {         
+                align-items: center;     
+                justify-content: center;  
+                    ul{
+                        list-style: none;
+                        // justify-self: end;
+                    }
+                // [class*="col-md-"]
+                // {
+                //     align-items: center;
+                // }
+            }
+        }
+    }

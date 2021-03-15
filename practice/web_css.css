@@ -3,20 +3,16 @@ body{
     padding: 0;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
-}
-
-.container{
-    /* background-color:aquamarine; */
+}                       
+.container{                                 /* SECTION-1-home */
     height: 100vh;
 }
 .container-sub{
-    /* background: blueviolet; */
     display: grid;
-    grid-template-rows: 30% 21% 25% 29% 30%;
+    grid-template-rows: 30% 21% 20% 25% 30% 25%;
     row-gap: 4px;
 }
-.top
-{
+.top{
     background:url("bridge.jpg");
     display: flex;
     flex-direction: column;
@@ -24,7 +20,6 @@ body{
     background-size: cover;
     color: snow;
     position: relative;
-   
 }
 .top::after{
     content: '';
@@ -74,20 +69,21 @@ body{
 .top-detail-sub{
     margin-top: 15px;
 }
-.mid{
+.mid{                                           /* SECTION-2-Types */
     background:rgba(247, 113, 112, 1);
     color:snow;
     justify-content: center;
     text-align: center;
 }
-.mid .mid-heading{
+.mid .mid-heading, .mid-works .mid-heading{
     background:rgba(247, 113, 112, 1);
     padding: 30px 6vw 1px 6vw;
     box-shadow: 0 -8px 6px rgb(59, 59, 59);
     font-weight: 700;
-    font-size: 00.55em;
+    font-size: 12px;
     z-index: 2;
     position: relative;
+    color: white;
 }
 .mid .mid-1 .heading{
     padding: 5px 0;
@@ -98,14 +94,18 @@ body{
     text-align: center;
     display: grid;
     grid-template-columns:38vh 38vh 38vh ;
-    column-gap: 8px;
+    column-gap: 40px;
     justify-content: center;
     padding: 5px 0 5px 0;
-    margin-top: 50px;    
+    margin-top: 50px;  
+    justify-self: center;  
 }
 .mid .mid-1{  
     margin: -25px 0 40px 00;
-    padding:5% 2%;
+    border:2px solid #f77170;
+    padding:7% 2%;
+    transition: margin 1.5s ;
+    width:150px;
 }
 .mid .mid-1 .logo img{
     height: 45px;
@@ -113,44 +113,57 @@ body{
 .mid .mid-1 .detail{
     font-size: 0.55em;
 }
-#grid2::after{
-}
 #grid1:hover{
     border:2px solid #e7e6e6;
     color:snow;
     background-color:rgba(252, 89, 90, 1) ; 
-    margin: -38px 0 40px 0;
+    margin: -40px 0 45px 0;
 }
 #grid2:hover{
     border:2px solid #e7e6e6;
     color:snow;
     background-color:rgba(252, 89, 90, 1) ; 
-    margin: -40px 0 40px 0;
+    margin: -40px 0 45px 0;
 }
 #grid3:hover{
+    background-color:rgba(252, 89, 90, 1) ; 
     border:2px solid #e7e6e6;
     color:snow;
-    background-color:rgba(252, 89, 90, 1) ; 
-    margin: -40px 0 40px 0;
+    margin: -40px 0 45px 0; 
 }
-/* img{
-    height: 60px;
-} */
-
-.mid-1 .web-1{
+.mid-works{                               /* SECTION-3-WORKS */
+    text-align: center;
+}
+.mid-works .sub-mid{
+    display: flex;
+}
+.mid-works .mid-1{
+    height: 40vh;
+    width:150px;
+    /* margin:0 50px; */
+}
+.mid-works .mid-1 .web-1{
     background-color: rgb(255, 255, 255);
-    height: 30vh;
-    padding: 15px 0;
     border-bottom: 2px solid black;
+    /* height: 30vh; */
+    padding: 15px 0;
+    transition: margin 1.5s ;
 }
-.mid-1 .web-1 img{
+.mid-works .mid-1 .web-1:hover{
+    border:2px solid #e7e6e6;
+    color:snow;
+    margin: -40px 0 45px 0; 
+}
+.mid-works .mid-1 .web-1 img{
    padding: 0 2px;
 }
-.web-1 .heading{
+.mid-works .mid-1 .web-1 .heading{
     color:rgba(252, 89, 90, 1) ;
+    font-size: small;
 }
 .sub-mid .web-1 .detail{
     color: black;
+    font-size: 10px;
 }
 .sub-mid .web-1:hover{
     border:2px solid #e7e6e6;
@@ -158,9 +171,43 @@ body{
     background-color:rgb(255, 255, 255) ; 
     margin: -37px 0 30px 0;
 }
-.mid-deatil-sec{
+.mid-deatil-sec{                                /* SECTION-4-PORT. */
     padding: 30px 60px;
-    
+}
+.mid .sub-mid{    
+    justify-self: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns:38vh 38vh 38vh ;
+    column-gap: 60px;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    margin-top: 50px;    
+}
+ #grid1-blog, #grid2-blog, #grid3-blog{
+    height: 250px;
+    background-color: white;
+    color: black;
+    border-bottom:2px solid black;
+    transition: margin 1.5s ;
+    width:180px;
+}
+#grid1-blog .heading, #grid2-blog .heading, #grid3-blog .heading{
+    color: rgba(233, 115, 93, 1) ;
+    padding: 10px 0;
+}
+#grid1-blog:hover, #grid2-blog:hover, #grid3-blog:hover{
+    background-color:rgb(252, 247, 247) ; 
+    margin: -40px 0 40px 0;
+}
+#grid1-blog a, #grid2-blog a, #grid3-blog a{
+    color:white;
+    background-color:rgba(233, 115, 93, 1);
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 0.6em;
+    padding: 2px 4px;
+    margin-top: 155px;
 }
 .sub-mid-sec{
     height: 250px;
@@ -171,7 +218,6 @@ body{
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* display: inline-block; */
 }
 .sub-mid-sec .p-1{
     font-size: 2em;
@@ -198,22 +244,29 @@ body{
     color: white;
 }
 .bottom{
-    background:coral;
+    background:rgba(186, 46, 47, 1);
 }
-
-@media (max-width:769px){    
+/*@ MEDIA QUERIES*/
+@media (max-width:769px){      
     .sub-mid{        
         grid-template-columns: 60vh 60vh;        
     }
     .container-sub{        
-        grid-template-rows:25% 21% 38% 20% 20%;        
+        grid-template-rows:20% 21% 38% 20% 30% 30%;        
     }
     .top-nav-bar ul{
                margin:0 30px;   
     }    
-
+    .mid{
+        padding: 0 40px 0 50px;
+    }
     .mid-1{
-        margin: 0 10px 10px 10px;
+        transform: scale(0.7,0.7);
+        margin: -20px 0;
+    }
+    #grid1-blog, #grid2-blog, #grid3-blog{
+        transform: scale(0.7,0.7);
+        margin: -20px 0;
     }
     /* .mid-1 .web-1{
         height: 25vh;
@@ -222,42 +275,26 @@ body{
         border-bottom: 2px solid black;
     } */
 }
-
 @media (max-width:596px){    
     .sub-mid{       
         grid-template-columns: 60vh;        
     }
+   .mid{
+       padding: 0 20px;
+   }
     .container-sub{        
-        grid-template-rows:20% 21% 36% 20% 20%;        
+        grid-template-rows:15% 21% 25% 20% 35% 30%;        
     }
     .mid-1{
-        margin: 0 10px 10px 10px;
+        transform: scale(0.5,0.6);
+        margin: -50px 0;
     }
-    .web-1 {
-        margin: 0 30%;
-        
+    .mid-works .mid-1 {
+        margin-top: 5px;
     }
-    /* .sub-mid .mid-1{      
-        grid-template-columns: 60vh;        
-    } */
+    #grid1-blog , #grid2-blog , #grid3-blog{
+        transform: scale(0.5,0.7);
+    }
 }
 
-/* Hello, @Bhopender  sir,
-
-I hope you are having a good time!
-Please find today's work status report below:
-
-1) Worked on :
-       • a. making a page responsive without Bootstrap, 
-       • b. mainly grid and flex and it's different properties
-      
-Approach: html, bootstrap 5 , CSS , JQuery
-2) Completed END of the day: 
-       • a. made a web page ,designed it with CSS only 
-       • b. used grid and flex
-       • c. made it responsive
-             
-3) In progress:
-       • a. media query for grid ,ul and flex 
-4) Any query/blockage: no  
-Thanks */
+/*  */

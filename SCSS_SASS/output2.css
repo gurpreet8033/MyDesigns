@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: linear-gradient(to right, #000000, #434343);
+}
+
+.container {
+  color: pink;
+}
+.container ul li {
+  color: blue;
+}
+.container button {
+  background-color: #8fd9db;
+}
+
+.container [class*=box-] {
+  height: 100px;
+  width: 200px;
+  background-color: chocolate;
+  margin: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #000000, #434343);
+}
+
+.container {
+  color: #8fd9db;
+}
+.container .container-sm {
+  background: linear-gradient(to right, #000000, #434343);
+}
+.container .container-sm .row [class*=col-] {
+  background-color: chartreuse;
+  color: black;
+}
+.container ul {
+  position: relative;
+  transform: rotate(-35deg) skew(20deg, 5deg);
+}
+.container ul li {
+  background: #000;
+  color: #575757;
+  text-align: center;
+  height: 2.5em;
+  width: 4em;
+  vertical-align: middle;
+  line-height: 2.5em;
+  border-bottom: 1px solid #060606;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  box-shadow: -2em 1.5em 0 #e1e1e1;
+  transition: all 0.25s linear;
+}
+
+/*# sourceMappingURL=output2.css.map */

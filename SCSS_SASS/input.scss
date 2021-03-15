@@ -1,0 +1,22 @@
+
+$main-font-color:pink;
+$background-color1: linear-gradient(to right, #000000, #434343);
+$list-color:blue;
+$sky-color:rgb(143, 217, 219);
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: $background-color1 ;
+}
+.container{
+    color:$main-font-color;
+    ul{
+        li{
+            color:$list-color;
+        }        
+    }
+    button{
+        background-color:$sky-color ;
+    }
+}

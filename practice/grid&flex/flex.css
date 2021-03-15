@@ -1,0 +1,20 @@
+body{
+    background: url("../painting1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-container{
+    background:rgb(255, 147, 7);
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch ;
+    height: 500px;
+    width: 700px;
+}
+.flex-container .item-1{
+    background:rgb(168, 231, 104);
+    height: 30vh;
+    width: 50px;
+    text-align: center;
+}

@@ -1,0 +1,148 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.deposit-needs .row .detail .text-2, .container .mid-about .row .detail .text-2, .container .mid-help .row .detail .text-2, .container .top-find .row .detail .text-2, .container .outer .inner .top-start .row .detail .text-2 {
+  color: #009bde;
+}
+
+.container .mid-how .detail .text-2, .container .mid-how .detail .text-1, .deposit-needs .row .detail .text-1, .container .mid-about .row .detail .text-1, .container .mid-help .row .detail .text-1, .container .top-find .row .detail .text-1, .container .outer .inner .top-start .row .detail .text-1, .deposit-needs .row .detail .text-2, .container .mid-about .row .detail .text-2, .container .mid-help .row .detail .text-2, .container .top-find .row .detail .text-2, .container .outer .inner .top-start .row .detail .text-2 {
+  font-weight: 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+}
+
+.pic {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.container .outer .navbar {
+  justify-content: space-between;
+}
+.container .outer .navbar ul li {
+  width: fit-content;
+}
+.container .outer .navbar ul li button {
+  background-color: #009bde;
+}
+.container .outer .navbar ul .news {
+  color: #009bde;
+}
+.container .outer .navbar ul a {
+  font-weight: 700;
+  color: black;
+}
+.container .outer .inner {
+  box-shadow: 0 0px 6px #ccc4c4;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  margin-top: 10px;
+  padding: 100px 0 0 50px;
+}
+.container .outer .inner .top-start .row .detail button:nth-child(1) {
+  background-color: #009bde;
+}
+.container .outer .inner .top-start .row .arrow {
+  justify-self: end;
+}
+.container .outer .inner .top-start .row .pic {
+  margin-top: -40px;
+}
+.container .top-find {
+  margin-top: 50px;
+}
+.container .top-features {
+  margin-top: 100px;
+}
+.container .top-features .row .col {
+  text-align: center;
+  border-radius: 9px;
+}
+.container .mid-how {
+  text-align: center;
+  width: fit-content;
+  margin: 0px 200px;
+  position: relative;
+  text-overflow: ellipsis;
+}
+.container .mid-how .detail {
+  text-align: center;
+}
+.container .mid-how .detail .text-1 {
+  display: inline;
+}
+.container .mid-how .detail .text-2 {
+  display: inline;
+  color: #009bde;
+}
+.container .mid-how .pic iframe {
+  border-radius: 50px;
+  height: 500px;
+  width: 800px;
+}
+.container .mid-help {
+  margin-top: 100px;
+}
+.container .mid-help .row .image .pic {
+  border-radius: 8px;
+}
+.container .mid-about {
+  margin-top: 100px;
+}
+.container .mid-about .row .pic img {
+  border-radius: 8px;
+}
+
+.deposit-needs {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+}
+.deposit-needs .row .detail {
+  padding-left: 95px;
+  display: grid;
+  height: 50vh;
+}
+.deposit-needs .row .detail .text-1 {
+  align-self: end;
+}
+.deposit-needs .row .butn {
+  align-self: center;
+}
+.deposit-needs .pic img {
+  border-radius: 8px;
+}
+.deposit-needs button {
+  background-color: #009bde;
+}
+
+.bottom {
+  height: 70vh;
+}
+.bottom .bottom-inner {
+  margin: 0 380px;
+}
+.bottom .bottom-inner .row {
+  text-align: center;
+}
+.bottom .bottom-inner-2 {
+  text-align: center;
+}
+.bottom .bottom-inner-2 .row {
+  margin: 0 100px;
+}
+.bottom .bottom-inner-3 .row {
+  align-items: center;
+  justify-content: center;
+}
+.bottom .bottom-inner-3 .row ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=webpage2.css.map */
